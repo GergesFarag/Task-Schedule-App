@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 300; */
+}
+.container{
+    height: 100vh;
+    padding: 10px;
+    background-image: linear-gradient(45deg , white , #82d7e9);
+}
+.container .todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #48cae4;
+    margin: 200px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;  
+    /* text-align: center; */
+    box-shadow: 0px 10px 0px #39a8be;
+}
+.todo-app h2{
+    color: #03045e;
+    text-align: center;
+}
+.todo-app .add{
+    margin-top:  20px;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.add #txtinput{
+    padding:10px;
+    background-color: transparent;
+    width: 300px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    flex-grow: 1;
+}
+.add #addbtn{
+    padding: 10px;
+    width: 100px;
+    outline: none;
+    border-radius: 50px;
+    border: none;   
+    transition: 0.3s ease;
+    background-color: #0077b6;
+    color:white;
+}
+.add #addbtn:hover{
+   background-color:#03045e;
+   color: white;
+   cursor: pointer;
+}
+#task-list li{
+    list-style: none;
+    padding: 5px;
+    margin: 10px 0px 10px 30px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+li::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    background-image: url(../img/unchecked.png);
+    border-radius: 50%;
+    background-size: cover;
+    top:3px;
+    left:-30px;
+    /* border: 1px solid #DDDDDD; */
+}
+#task-list .checked{
+    text-decoration: line-through;
+}
+.checked:before{
+    content: "";
+    background-image: url(../img/check.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+#task-list li span{
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    font-weight: lighter;
+    transition: 0.1s ease;
+    width:25px;
+    text-align: center;
+}
+li span:hover{
+    background-color: #eee;
+    border-radius:50%;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact img{
+    margin-right:20px;
+    transition: 0.3s ease;
+}
+.contact img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
