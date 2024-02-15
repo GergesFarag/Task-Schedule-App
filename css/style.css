@@ -64,8 +64,8 @@
     padding: 10px;
     background-color: #fff;
     border-radius: 15px;
-    margin: 6px;
-    max-width: 74%;
+    margin: 10px 10px 10px 10px;
+    max-width: 70%;
     position: relative;
 }
 .right-content{
@@ -119,7 +119,7 @@
         margin-top: 3px;
     }
   }
-  @media (min-width: 360px) and (max-width: 460px) {
+  @media (min-width: 360px) and (max-width: 430px) {
     .todo-app{
         width: 350px;
         padding: 0px;
@@ -138,17 +138,17 @@
         margin-top: 3px;
     }
   }
-  @media (min-width: 460px) and (max-width: 560px) {
+  @media (min-width: 430px) and (max-width: 480px) {
     .todo-app{
-        width: 450px;
+        width: 380px;
         padding: 0px;
     }
     .task-container{
-        width: 450px;
+        width: 380px;
         padding: 10px;
     }
     #task-list{
-        max-width : 430px;
+        max-width : 350px;
     }
     .right-content
     {
