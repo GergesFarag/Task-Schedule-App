@@ -104,15 +104,16 @@
 }
 @media (min-width: 300px) and (max-width: 500px) {
     .task-container{
-        width: 320px;
+        width: 360px;
         padding: 10px;
     }
     #task-list{
-        max-width: 270px;
+        max-width : 300px;
     }
     .right-content
     {
         font-size: small;
-        margin-right: 25px;
+        margin-right: 20px;
+        margin-top: 3px;
     }
   }
