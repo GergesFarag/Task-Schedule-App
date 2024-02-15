@@ -1,0 +1,11 @@
+[1] design the HTMl elements and put the tasks in ul 
+[2] style the elements and assign the styling class to the new task added
+[3] add delete button and style it
+[4] in Js file :
+	- if the input is empty => do not no thing
+	- else => add the inner text of the input to the new element added
+	int the schedule 
+	- add the child in the ul 
+	- if the task is accomblished add class done to it
+	- to delete the element loop on the elements and onclick on the
+	delete button delete the element 

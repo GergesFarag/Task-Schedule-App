@@ -2,27 +2,21 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
     /* font-weight: 300; */
 }
 .container{
     height: 100vh;
     padding: 10px;
-    background-image: linear-gradient(45deg , white , #82d7e9);
+    background-image: #fff;
 }
 .container .todo-app{
     width: 100%;
     max-width: 540px;
-    background-color: #48cae4;
-    margin: 200px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 20px;  
-    /* text-align: center; */
-    box-shadow: 0px 10px 0px #39a8be;
-}
-.todo-app h2{
-    color: #03045e;
-    text-align: center;
+    background-color: #eee;
+    margin : 20px auto;
+    padding: 10px;
+    border-radius: 15px;  
 }
 .todo-app .add{
     margin-top:  20px;
@@ -31,86 +25,80 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 .add #txtinput{
-    padding:10px;
+    padding:5px;
     background-color: transparent;
-    width: 300px;
+    width: 100px;
     outline: none;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     flex-grow: 1;
+    margin-left: 20px;
 }
 .add #addbtn{
     padding: 10px;
     width: 100px;
     outline: none;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;   
     transition: 0.3s ease;
-    background-color: #0077b6;
+    background-color: rgb(247, 47, 47);
     color:white;
 }
 .add #addbtn:hover{
-   background-color:#03045e;
+   background-color: rgb(149, 24, 24);
    color: white;
    cursor: pointer;
 }
-#task-list li{
-    list-style: none;
-    padding: 5px;
-    margin: 10px 0px 10px 30px;
-    font-weight: 400;
-    position: relative;
-    cursor: pointer;
-}
-li::before{
-    content: "";
-    position: absolute;
-    width: 25px;
-    height:25px;
-    border-radius: 50%;
-    background-image: url(../img/unchecked.png);
-    border-radius: 50%;
-    background-size: cover;
-    top:3px;
-    left:-30px;
-    /* border: 1px solid #DDDDDD; */
-}
-#task-list .checked{
-    text-decoration: line-through;
-}
-.checked:before{
-    content: "";
-    background-image: url(../img/check.png);
-    height: 25px;
-    width: 25px;
-    background-size: cover;
-}
-#task-list li span{
-    position: absolute;
-    right: 0;
-    font-size: 25px;
-    font-weight: lighter;
-    transition: 0.1s ease;
-    width:25px;
-    text-align: center;
-}
-li span:hover{
+.task-container{
+    padding: 10px;
     background-color: #eee;
-    border-radius:50%;
+    max-width: 540px;
+    margin: 0px auto;
+    border-radius: 20px;
 }
-.contact{
-    display: flex;
-    justify-content: center;
+#task-list .task{
+    list-style: none;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 75%;
+    position: relative;
 }
-.contact img{
-    margin-right:20px;
-    transition: 0.3s ease;
+.right-content{
+    position: absolute;
+    top:9px;
+    right:-130px;
 }
-.contact img:hover{
-    opacity: 0.5;
+.task .delete{
+    padding: 7px;
+    background-color: rgb(247, 47, 47);
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
+    margin-right: 5px;  
+}
+.task span:hover{
+    background-color: rgb(149, 24, 24);
+}
+.task .done{
+    padding: 7px;
+    background-color: rgb(23, 167, 59);
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    min-width: 50px;
+}
+#task-list .done:hover{
+    background-color: rgb(12, 86, 30);
+}
+#task-list .done-task{
+    opacity: 0.5;
 }
