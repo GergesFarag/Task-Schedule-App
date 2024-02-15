@@ -28,6 +28,7 @@
     margin-bottom: 20px;
 }
 .add #txtinput{
+
     background-color: transparent;
     width: 100px;
     outline: none;
@@ -99,7 +100,7 @@
 #task-list .done-task{
     opacity: 0.5;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 360px) {
     .todo-app{
         width: 280px;
         padding: 0px;
@@ -118,17 +119,36 @@
         margin-top: 3px;
     }
   }
-  @media (min-width: 400px) and (max-width: 550px) {
+  @media (min-width: 360px) and (max-width: 460px) {
     .todo-app{
-        width: 380px;
+        width: 350px;
         padding: 0px;
     }
     .task-container{
-        width: 380px;
+        width: 350px;
         padding: 10px;
     }
     #task-list{
-        max-width : 340px;
+        max-width : 300px;
+    }
+    .right-content
+    {
+        font-size: small;
+        margin-right: 22px;
+        margin-top: 3px;
+    }
+  }
+  @media (min-width: 460px) and (max-width: 560px) {
+    .todo-app{
+        width: 450px;
+        padding: 0px;
+    }
+    .task-container{
+        width: 450px;
+        padding: 10px;
+    }
+    #task-list{
+        max-width : 430px;
     }
     .right-content
     {
