@@ -111,12 +111,12 @@
         padding: 10px;
     }
     #task-list{
-        max-width : 320px;
+        max-width : 350px;
     }
     .right-content
     {
         font-size: small;
-        margin-right: 20px;
+        margin-right: 22px;
         margin-top: 3px;
     }
   }
