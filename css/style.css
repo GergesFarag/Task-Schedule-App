@@ -102,14 +102,17 @@
 #task-list .done-task{
     opacity: 0.5;
 }
-@media screen and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 500px) {
+    .task-container{
+        width: 320px;
+        padding: 10px;
+    }
     #task-list{
-        max-width: 350px;
+        max-width: 270px;
     }
     .right-content
     {
         font-size: small;
-        margin-right: 20px;
+        margin-right: 25px;
     }
-
   }
