@@ -28,14 +28,12 @@
     margin-bottom: 20px;
 }
 .add #txtinput{
-    padding:5px;
     background-color: transparent;
     width: 100px;
     outline: none;
-    border-radius: 10px;
     border: none;
     flex-grow: 1;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .add #addbtn{
     padding: 10px;
