@@ -140,15 +140,15 @@
   }
   @media (min-width: 430px) and (max-width: 480px) {
     .todo-app{
-        width: 380px;
+        width: 410px;
         padding: 0px;
     }
     .task-container{
-        width: 380px;
+        width: 410px;
         padding: 10px;
     }
     #task-list{
-        max-width : 350px;
+        max-width : 390px;
     }
     .right-content
     {
