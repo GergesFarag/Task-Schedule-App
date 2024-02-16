@@ -1,13 +1,12 @@
 let inputField = document.querySelector("#txtinput"); 
-let addBtn = document.querySelector("#addbtn") 
+let addBtn = document.querySelector("#addbtn") ;
+let container = document.querySelector(".task-container");
 let taskList = document.querySelector("#task-list"); 
 let arrOfTasks = [];
-
 if(window.localStorage.getItem("tasks")){
     arrOfTasks = JSON.parse(localStorage.getItem("tasks"));
 }
 getFromLS();
-
 addBtn.onclick = function(){
     if(inputField.value !== ""){
         addTasksToList(inputField.value);    
