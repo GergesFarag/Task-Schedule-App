@@ -91,6 +91,8 @@ function addTasksToList(taskText){
     arrOfTasks.push(task);
     addElementsToPageFromArr(arrOfTasks);
     addToLS(arrOfTasks);
+    percentDiv.textContent = `${(doneCounter / arrOfTasks.length * 100).toFixed()}%`
+    DrawQuote((doneCounter / arrOfTasks.length * 100).toFixed(),percentQuote);
 }
 
 function addElementsToPageFromArr(arrOfTasks){
