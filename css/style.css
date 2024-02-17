@@ -102,6 +102,32 @@
     opacity: 0.5;
     text-decoration: line-through;
 }
+.progress{
+    padding: 10px;
+    background-color: rgb(23, 167, 59);
+    color :white;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 25px auto;
+    display: inline;
+    z-index: 1;
+}
+.progressMSG{
+    padding: 10px 10px 10px 50px;
+    background-color: #eee;
+    color: black;
+    display: inline;
+    margin-left: -45px;
+    border-radius: 25px;
+    position: relative;
+    z-index: -1;
+}
+.progress-div{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 50px;
+}
 @media (min-width: 300px) and (max-width: 360px) {
     .todo-app{
         width: 280px;
@@ -119,6 +145,16 @@
         font-size: small;
         margin-right: 22px;
         margin-top: 3px;
+    }
+    .progressMSG{
+        margin: 0 auto;
+        display: block;
+        text-align: end;
+    }
+    .progress {
+        margin-bottom: -50px;
+        position: absolute;
+        top: -50px;
     }
   }
   @media (min-width: 360px) and (max-width: 430px) {
@@ -139,6 +175,16 @@
         margin-right: 22px;
         margin-top: 3px;
     }
+    .progressMSG{
+        margin: 0 auto;
+        display: block;
+        text-align: end;
+    }
+    .progress {
+        margin-bottom: -50px;
+        position: absolute;
+        top: -50px;
+    }
   }
   @media (min-width: 430px) and (max-width: 480px) {
     .todo-app{
@@ -157,5 +203,27 @@
         font-size: small;
         margin-right: 22px;
         margin-top: 3px;
+    }
+    .progressMSG{
+        margin: 0 auto;
+        display: block;
+        text-align: end;
+    }
+    .progress {
+        margin-bottom: -50px;
+        position: absolute;
+        top: -50px;
+    }
+  }
+  @media (min-width: 480px) and (max-width: 980px) {
+    .progressMSG{
+        margin: 0 auto;
+        display: block;
+        text-align: end;
+    }
+    .progress {
+        margin-bottom: -50px;
+        position: absolute;
+        top: -50px;
     }
   }
