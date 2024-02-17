@@ -100,6 +100,7 @@
 }
 #task-list .done-task{
     opacity: 0.5;
+    text-decoration: line-through;
 }
 @media (min-width: 300px) and (max-width: 360px) {
     .todo-app{
